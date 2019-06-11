@@ -1,0 +1,43 @@
+.borR(@num:3px){border-radius: @num;}
+.w(@num1){width: @num1+0px;}
+.h(@num1){height: @num1+0px;}
+.wh(@num1,@num2:auto){width: @num1+0px;height: @num2+0px;}
+.lh(@num1,@num2:auto){height: @num1+0px;line-height:@num2+0px;}
+
+.bp(@num1,@num2){background-position: @num1+0px @num2+0px}
+.tr3dPy(@val1,@val2,@second:0.35s){transform: translate(@val1,@val1); transition: @second; -webkit-transform: translate(@val1,@val2); -moz-transform: translate(@val1,@val2); -ms-transform: translate(@val1,@val2); -o-transform: translate(@val1,@val2); transform: translate(@val1,@val2); -webkit-transition: @second; -moz-transition: @second; -ms-transition: @second; -o-transition: @second; transition: @second;}
+.tr3dSc(@num,@second:0.35s){-webkit-transform: scale(@num);-moz-transform: scale(@num);-ms-transform: scale(@num);-o-transform: scale(@num);transform: scale(@num);-webkit-transition: @second;-moz-transition: @second;-ms-transition: @second;-o-transition: @second;transition: @second;}
+.tr3dXz(@num,@second:0.35s){-webkit-transform: rotate(@num); -moz-transform: rotate(@num); -ms-transform: rotate(@num); -o-transform: rotate(@num); transform: rotate(@num); -webkit-transition: @second; -moz-transition: @second; -ms-transition: @second; -o-transition: @second; transition: @second;}
+.trTime(@second:0.35s){-webkit-transition: @second; -moz-transition: @second; -ms-transition: @second; -o-transition: @second; transition: @second;}
+.bg(@num){background: @num}
+
+/*border*/
+.bor(@color){border: 1px solid @color}
+.bor_t(@color){border-top: 1px solid @color}
+.bor_b(@color){border-bottom: 1px solid @color}
+.bor_l(@color){ border-left: 1px solid @color}
+.bor_r(@color){ border-right: 1px solid @color}
+/*字体颜色，背景颜色*/
+.cor(@cor){color: @cor;}
+
+.bag(@cor){background: @cor;}
+
+.mt(@num){margin-top: @num+0px;}
+.mb(@num){margin-bottom: @num+0px;}
+.mr(@num){margin-right: @num+0px;}
+.ml(@num){margin-left: @num+0px;}
+
+.pt(@num){padding-top: @num+0px;}
+.pb(@num){padding-bottom: @num+0px;}
+.pl(@num){padding-left: @num+0px;}
+.pr(@num){padding-right: @num+0px;}
+
+//颜色
+@bcor1:#f3f3f3;
+@bcor2:#ededed;
+@cor1:#427ef0;
+@cor2:#dc2321;
+@cor3:#ef7511;
+@cor4:#ba81f4;
+@cor5:#f1af74;
+@cor6:#00c92e;
