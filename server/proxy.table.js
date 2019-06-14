@@ -1,11 +1,11 @@
 const proxy = {
     '/yt1.0': {
-        target: 'http://test.deepinfo.cn',
+        target: 'http://test.deepinfo.cn:81',
         secure: false,
         changeOrigin: true
     },
     '/yt2.0' : {
-        target: 'http://test.deepinfo.cn',
+        target: 'http://test.deepinfo.cn:81',
         secure: false,
         changeOrigin: true
     }

@@ -9,8 +9,8 @@ Vue.use(Router);
 
 const router = new Router({
     mode: "hash",
-    base: process.env.BASE_URL,
-    linkExactActiveClass: 'actived',
+    // base: process.env.BASE_URL,
+    // linkExactActiveClass: 'actived',
     routes: staticRoute
 });
 
@@ -20,6 +20,7 @@ router.afterEach((to,from,next) => {
     window.scrollTo(0,0);
 })
 router.beforeEach((to, from, next) => {
+    console.log(to)
     // NProgress.start();
     if (whiteList.indexOf(to.path) !== -1) {
         console.log('该页面无需登录即可访问')

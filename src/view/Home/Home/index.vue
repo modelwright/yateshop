@@ -1,6 +1,9 @@
 <template>
     <div class="pos wp100 bag1">
-        <img class="wp100" :src="respons.advert.url || '@a/img/jpg/pic1.jpg'" alt="">
+        <div class="pr">
+            <img class="wp100" :src="respons.advert.url || '@a/img/jpg/pic1.jpg'" alt="">
+            <router-link to="/serch"><img class="pos serchbox" src="@a/img/png/pic18.png" alt=""></router-link>
+        </div>
         <!-- <div>
             <div class="imgbox"><img class="wp100" src="@a/img/jpg/pic2.jpg" alt=""></div>
             <div class="textEll2 f28 cor3 mb25">暴汗服女套装爆汉服发热裤控重跑步运动...</div>
@@ -21,7 +24,6 @@
                 <Goods v-for="(fade,index) in item.list" :key="index" :to="fade.id" :itemed="fade"/>
             </div>
         </div>
-        <Tabbar to="/index"/>
     </div>
 </template>
 
@@ -29,13 +31,11 @@
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import Title from '@c/Title'
 import Goods from '@c/Goods'
-import Tabbar from '@c/Tabbar'
 import { home } from '@/api'
 export default {
     components: {
         Title,
         Goods,
-        Tabbar,
         swiper,
         swiperSlide
     },
@@ -90,4 +90,5 @@ export default {
 .hongzi{color:@cor2;}
 .box{.w(300);}
 .imgbox{width:300px;height:300px;}
+.serchbox{top:40px;left:0;.w(100%);padding:0 30px;}
 </style>
